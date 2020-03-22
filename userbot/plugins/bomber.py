@@ -15,6 +15,6 @@ async def _(event):
         return
     paramss={"phone":num}
     for i in range (n):
-        requests.post(https://cms.ntc.net.np/api/generateAuthPassword",params=paramss)
+        requests.post("https://cms.ntc.net.np/api/generateAuthPassword",params=paramss)
 
 
