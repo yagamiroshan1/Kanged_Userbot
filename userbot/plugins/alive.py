@@ -12,6 +12,6 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet... puk you"
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await alive.edit("Corona hasn't killed me yet.\n\n"
-                     "Telethon version: 6.9.0\nPython: 3.7.3\n"
-                     "Database Status: Databases functioning normally!(unless you run out of dynos)\n`"
-                     f"This nibba kanged me: {DEFAULTUSER}\n")
+                     "`Telethon version: 6.9.0\nPython: 3.7.3`\n"
+                     "`Database Status: Databases functioning normally!(unless you run out of dynos)`\n"
+                     f"`This nibba kanged me: {DEFAULTUSER}`\n")

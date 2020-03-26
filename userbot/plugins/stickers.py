@@ -181,7 +181,7 @@ async def _(event):
 
 
     await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname})"
-                     f" `by`{DEFAULTUSER}\n**")
+                     f" `by` {DEFAULTUSER}\n")
 
 
 @borg.on(admin_cmd(pattern="packinfo"))
