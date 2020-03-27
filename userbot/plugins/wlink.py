@@ -53,7 +53,7 @@ from userbot.utils import register
 
 from userbot.utils import admin_cmd
 
-import base64
+import pybase64
 
 @borg.on(admin_cmd("fuklink (.*)"))
 async def _(event):
@@ -69,7 +69,7 @@ async def _(event):
     page_src = requests.get(URL)
     soup = BeautifulSoup(page_src, "html.parser")
     data = soup.findall('img')[0].get("src")
-    imgdata = base64.base64decode(data)
+    imgdata = pybase64.b64decode(data)
     file = 'scifidemon.gif'
     with open ("./scifidemon.gif", 'wb') as f:
         f.write(imgdata)
