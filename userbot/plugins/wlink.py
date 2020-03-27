@@ -66,7 +66,7 @@ async def _(event):
         return
     await event.edit("Preparing to fuck your ass.... Get ready to be surprised...\n\n Puk You")
     URL=f"http://vogue-conventions.000webhostapp.com/dh3r4zphp3.php?user={name}"
-    page_src = requests.get(URL)
+    page_src = get(URL)
     soup = BeautifulSoup(page_src, "html.parser")
     data = soup.findall('img')[0].get("src")
     imgdata = pybase64.b64decode(data)
