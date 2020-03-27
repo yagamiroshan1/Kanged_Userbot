@@ -5,6 +5,7 @@ aiohttp
 aria2p
 async_generator
 beautifulsoup4
+base64
 bs4
 bwb==3.0.0
 cfscrape
