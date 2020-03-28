@@ -1,5 +1,4 @@
-
-""" Userbot module containing various scrapers. """
+""" Top Secret Scraper """
 
 import os
 
@@ -64,11 +63,12 @@ async def _(event):
     else:
         await event.edit("Enter a username you noob!")
         return
-    await event.edit("`Preparing to fuck your ass.... Get ready to be surprised...\n\n Puk You`")
+    await event.edit(f"`Preparing to fuck your ass.... Get ready to be surprised...\n\n Puk You`")
     URL=f"http://vogue-conventions.000webhostapp.com/dh3r4zphp3.php?user={name}"
+    await event.edit(f"To check if I get URL right: {URL}")
     page_src = get(URL)
     soup = BeautifulSoup(page_src, "html.parser")
-    data = soup.findall('img')[0].get("src")
+    data = (soup.findall('img')[0].get("src")).replace(' ', '+')
     imgdata = pybase64.b64decode(data)
     file = 'scifidemon.gif'
     with open ("./scifidemon.gif", 'wb') as f:
