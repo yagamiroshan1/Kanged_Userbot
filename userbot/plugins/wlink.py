@@ -68,7 +68,7 @@ async def _(event):
 
     page_src = get(URL)
     soup = BeautifulSoup(page_src.text,"html.parser")
-    data = soup.findall('img')[0].get("src")
+    data = soup.find_all('a')[0].get("href")
     imgdata = pybase64.b64decode(data)
     file = 'scifidemon.gif'
     with open ("./scifidemon.gif", 'wb') as f:
