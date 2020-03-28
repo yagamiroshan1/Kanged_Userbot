@@ -24,6 +24,7 @@ gsearch
 hachoir
 heroku3
 httplib2
+html.parser
 humanize
 lxml
 oauth2client
