@@ -1,9 +1,9 @@
 """NTC Bomber custom plugin by @scifidemon
-Format .ntc [phone number]"""
+Format .bombntc [phone number]"""
 import asyncio
 import requests
 from userbot.utils import admin_cmd
-@borg.on(admin_cmd("ntc (.*)"))
+@borg.on(admin_cmd("bombntc (.*)"))
 async def _(event):
     num=0
     n=100
