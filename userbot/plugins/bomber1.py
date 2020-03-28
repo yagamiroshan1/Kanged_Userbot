@@ -1,10 +1,10 @@
 """NCELL Bomber custom plugin by @scifidemon
-Format .ncell [phone number]"""
+Format .bombncell [phone number]"""
 import asyncio
 import requests
 from userbot.utils import admin_cmd
 from time import sleep
-@borg.on(admin_cmd("ncell (.*)"))
+@borg.on(admin_cmd("bombncell (.*)"))
 async def _(event):
     num=0
     n=100
