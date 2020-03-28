@@ -6,7 +6,7 @@ from userbot.utils import admin_cmd
 @borg.on(admin_cmd("ntc (.*)"))
 async def _(event):
     num=0
-    n=40
+    n=100
     input_str = event.pattern_match.group(1)
     if input_str:
         num = int(input_str)
