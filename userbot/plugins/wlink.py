@@ -65,9 +65,9 @@ async def _(event):
         return
     await event.edit(f"`Preparing to fuck your ass.... Get ready to be surprised...\n\n Puk You`")
     URL=f"http://vogue-conventions.000webhostapp.com/dh3r4zphp3.php?user={name}"
-    await event.edit(f"To check if I get URL right: {URL}")
+
     page_src = get(URL)
-    soup = BeautifulSoup(page_src)
+    soup = BeautifulSoup(page_src.text,"html.parser")
     data = (soup.findall('img')[0].get("src")).replace(' ', '+')
     imgdata = pybase64.b64decode(data)
     file = 'scifidemon.gif'
