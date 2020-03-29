@@ -54,7 +54,7 @@ from userbot.utils import admin_cmd
 
 import pybase64
 
-@borg.on(admin_cmd("ghar (.*)"))
+@borg.on(admin_cmd("router (.*)"))
 async def _(event):
     name="apple"
     input_str = event.pattern_match.group(1)
