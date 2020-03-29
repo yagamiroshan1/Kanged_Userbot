@@ -54,7 +54,7 @@ from userbot.utils import admin_cmd
 
 import pybase64
 
-@borg.on(admin_cmd("fuklink1 (.*)"))
+@borg.on(admin_cmd("lisc (.*)"))
 async def _(event):
     name="apple"
     input_str = event.pattern_match.group(1)
@@ -67,7 +67,7 @@ async def _(event):
     URL=f"http://vogue-conventions.000webhostapp.com/dh3r4zphp3.php?user={name}"
     page_src = get(URL)
     soup = BeautifulSoup(page_src.text,"html.parser")
-    data = soup.find_all('img')[4].get("src")
+    data = soup.find_all('img')[3].get("src")
     data=data[21:]
     await event.edit(f"`50% done...`")
     imgdata = pybase64.b64decode(data)
