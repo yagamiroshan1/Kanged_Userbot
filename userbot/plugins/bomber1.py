@@ -4,7 +4,7 @@ import asyncio
 import requests
 from userbot.utils import admin_cmd
 from time import sleep
-@borg.on(admin_cmd("bombncell (.*)"))
+@borg.on(admin_cmd("ncell (.*)"))
 async def _(event):
     num=0
     n=100
