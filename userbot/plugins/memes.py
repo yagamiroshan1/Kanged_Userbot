@@ -395,7 +395,8 @@ RUNSREACTS = [
 ]
 
 RAPE_STRINGS = [
-     "`Rape Done Drink The Cum`",
+    "` Gandi gandi baat dream ko maro laat`",
+ "`Rape Done Drink The Cum`",
      "`EK baat yaad rkhio, Chut ka Chakkar matlab maut se takkar`",
      "`The user has been successfully raped`",
      "`Dekho Bhaiyya esa hai! Izzat bachailo apni warna Gaand maar lenge tumhari`",
